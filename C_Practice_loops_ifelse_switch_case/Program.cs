@@ -142,7 +142,6 @@ namespace C_Practice_loops_ifelse_switch_case
 
             #endregion
 
-
             #region Task 2
 
             /// - Verilmiş qiymət dəyəri 64-dən böyük olarasa console-da "məzun oldunuz", əks halda "məzun olmadınız" yazdırsan proqram.
@@ -179,47 +178,32 @@ namespace C_Practice_loops_ifelse_switch_case
 
             #endregion
 
-
             #region Task 3
 
             //    Verilmiş ədədlər siyahısındaki 21 - ə bölenən ədədlərin ədədi ortasını tapan proqram
 
-            int[] nums = new int[] { 5,11,63,24,21,42 };
-            byte count = 0;
-            int sum = 0;
+            //int[] nums = new int[] { 5,11,63,24,21,42 };
+            //byte count = 0; 
+            //int sum = 0;
 
-            for (int i = 0; i < nums.Length; i++)
-            {
+            //for (int i = 0; i < nums.Length; i++)
+            //{
 
-                if (nums[i] % 21 == 0)
-                {
-                    sum += nums[i];
-                    count++;
-                }
-            }
-            if (count>0)
-            {
-                Console.WriteLine(sum / count);
-            }
-            else
-            {
-                Console.WriteLine("Tapilmadi!");
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-
+            //    if (nums[i] % 21 == 0)
+            //    {
+            //        sum += nums[i];
+            //        count++;
+            //    }
+            //}
+            //if (count>0)
+            //{
+            //    Console.WriteLine(sum / count);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Tapilmadi!");
+            //}
             #endregion
-
         }
     }
 }
