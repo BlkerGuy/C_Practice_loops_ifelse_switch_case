@@ -123,6 +123,102 @@ namespace C_Practice_loops_ifelse_switch_case
             #endregion
 
 
+            ///    Həftəsonu tapşırıqları:
+
+
+            #region Task 1
+
+            //   Verilmiş ədədin rəqəmləri cəmini tapan proqram:
+
+            //int num = Convert.ToInt32(Console.ReadLine());
+            //int singleDigit = 0;
+
+            //while (num!=0)
+            //{
+            //    singleDigit += num % 10;
+            //    num /= 10;
+            //}
+            //Console.WriteLine(singleDigit);
+
+            #endregion
+
+
+            #region Task 2
+
+            /// - Verilmiş qiymət dəyəri 64-dən böyük olarasa console-da "məzun oldunuz", əks halda "məzun olmadınız" yazdırsan proqram.
+            /// Qiymət dəyərini console-dan qəbul edin (Readline ilə).Qiymət dəyəri 0-100 aralığında olmalıdır,
+            /// 0-dan kiçin və ya 100-dən böyük dəyər daxil edələrsə yenidən daxil edilməsi istənilsin proqram tərəfindən
+            /// 
+
+            //Console.WriteLine("Zehmet olmasa deyer girin:");
+            //int num = Convert.ToInt32(Console.ReadLine());
+
+            //while (num > 100)
+            //{
+            //    Console.Clear();
+            //    Console.WriteLine("Zehmet olmasa duzgun deyer girin!!");
+            //    num = Convert.ToInt32(Console.ReadLine());
+
+            //};
+
+            //while (num < 0)
+            //{
+            //    Console.Clear();
+            //    Console.WriteLine("Zehmet olmasa duzgun deyer girin!!");
+            //    num = Convert.ToInt32(Console.ReadLine());
+            //}
+
+            //if (num > 64)
+            //{
+            //    Console.WriteLine("Tebrikler mezun oldunuz!");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Teessuf edirik, mezun olmadiniz!");
+            //}
+
+            #endregion
+
+
+            #region Task 3
+
+            //    Verilmiş ədədlər siyahısındaki 21 - ə bölenən ədədlərin ədədi ortasını tapan proqram
+
+            int[] nums = new int[] { 5,11,63,24,21,42 };
+            byte count = 0;
+            int sum = 0;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+
+                if (nums[i] % 21 == 0)
+                {
+                    sum += nums[i];
+                    count++;
+                }
+            }
+            if (count>0)
+            {
+                Console.WriteLine(sum / count);
+            }
+            else
+            {
+                Console.WriteLine("Tapilmadi!");
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            #endregion
 
         }
     }
